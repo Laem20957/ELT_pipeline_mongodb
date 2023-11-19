@@ -31,13 +31,13 @@ default_args = {
 
 
 @dag(
-    "DAG_connector",
+    "DAG_elt_pipeline",
     catchup=False,
     default_args=default_args,
     schedule_interval="0 */12 * * *",
     description="DAG runs the script every 12 hours"
 )
-def dag_connector():
+def dag_elt_pipeline():
     @task
     def task1():
         main(
@@ -50,4 +50,4 @@ def dag_connector():
     _ = task1()
 
 
-dag_connector = dag_connector()
+dag_elt_pipeline = dag_elt_pipeline()
