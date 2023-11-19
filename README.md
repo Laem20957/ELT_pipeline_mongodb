@@ -6,4 +6,4 @@ For use this script, you need:
 
 1. API-link with input dataset
 2. Change XPATH as needed
-3. MongoDB Host + port, cluster name, db name, collection name, login and password
+3. MongoDB Host + port, db name, collection name, login and password
